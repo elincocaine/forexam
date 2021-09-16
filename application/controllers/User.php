@@ -232,7 +232,7 @@ $this->form_validation->set_rules($config);
     }
     public function logout() {
             $this->session->sess_destroy();
-            redirect('register/index');
+            redirect('user/index');
         }
     
 
