@@ -148,4 +148,4 @@
     </div>
 </div>
 
-<script src="<?php echo base_url();?> /assets/js/register.js"></script>
+<script src="<?php echo base_url();?>/assets/js/register.js"></script>
