@@ -14,7 +14,7 @@ class Inventory extends CI_Controller{
     }
 
     function fetchAll(){
-      $result = '';
+      $result = array();
        $query=  $this->inventory->fetchAll();
              if($query){
                    $result['inventory']  =  $query;
