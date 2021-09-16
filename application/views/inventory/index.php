@@ -1,3 +1,7 @@
+  <?php if(empty($_SESSION['username']))
+      redirect('/');
+  ?>
+
   <a href = "/logout" >LOGOUT</a>
   <div id="inventory">
    <div class="container">
