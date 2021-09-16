@@ -41,7 +41,7 @@ var v = new Vue({
             address:'',
             usertype:''},
       stores: [
-              { link: '../civuejs/inventory', 
+              { link: '/inventory', 
                 title: 'Go to Inventory' 
               }
               ],

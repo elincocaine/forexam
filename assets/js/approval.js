@@ -24,7 +24,7 @@ Vue.component('modal',{ //modal
 var v = new Vue({
    el:'#approval',
     data:{
-        url:'http://localhost/civuejs/',
+        url:'/',
         addModal: false,
         editModal:false,
         deleteModal:false,
@@ -37,7 +37,7 @@ var v = new Vue({
             quantity:''
           },
       stores: [
-              { link: '../civuejs/approval', 
+              { link: '/approval', 
                 title: 'Go to Approval' 
               }
               ],
