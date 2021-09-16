@@ -24,7 +24,7 @@ Vue.component('modal',{ //modal
 var v = new Vue({
    el:'#app',
     data:{
-        url:'http://localhost/civuejs/',
+        url:'/',
         addModal: false,
         editModal:false,
         deleteModal:false,

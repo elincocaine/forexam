@@ -23,7 +23,7 @@ Vue.component('modal',{ //modal
 var v = new Vue({
    el:'#register',
     data:{
-        url:'http://localhost/civuejs/',    
+        url:'/',    
         users:[],
         newUser:{
             firstname:'',
