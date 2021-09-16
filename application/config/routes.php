@@ -54,5 +54,6 @@ $route['manage'] = 'user/manageUser';
 $route['approval'] = 'order/index';
 $route['UserOrder'] = 'order/order';
 $route['inventory'] = 'inventory/index';
+$route['logout'] = 'user/logout';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

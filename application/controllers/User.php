@@ -230,6 +230,10 @@ $this->form_validation->set_rules($config);
             redirect('/');
         }
     }
+    public function logout() {
+            $this->session->sess_destroy();
+            redirect('register/index');
+        }
     
 
 }
