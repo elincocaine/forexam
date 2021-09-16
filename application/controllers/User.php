@@ -5,7 +5,6 @@ class User extends CI_Controller{
     function __construct(){
         parent::__construct();
          $this->load->model('user_model','user');
-       
     }
     public function index(){
         $this->load->view('template/header');
@@ -13,6 +12,7 @@ class User extends CI_Controller{
         $this->load->view('template/footer');
     }
      function showAll(){
+        $this->load->model('user_model','user');
        $query=  $this->user->showAll();
              if($query){
                    $result['users']  = $this->user->showAll();
@@ -20,6 +20,7 @@ class User extends CI_Controller{
         echo json_encode($result);
     }
      function addUser(){
+        $this->load->model('user_model','user');
 		$config = array(
         array('field' => 'firstname',
               'label' => 'Firstname',
@@ -90,6 +91,7 @@ $this->form_validation->set_rules($config);
     }
 
      function updateUser(){		
+        $this->load->model('user_model','user');
          $config = array(
         array('field' => 'firstname',
               'label' => 'Firstname',
@@ -151,6 +153,7 @@ $this->form_validation->set_rules($config);
           echo json_encode($result);
      }
     function deleteUser(){
+        $this->load->model('user_model','user');
          $id = $this->input->post('id');
         if($this->user->deleteUser($id)){
              $result['status'] = "SUCCESS";
@@ -162,6 +165,7 @@ $this->form_validation->set_rules($config);
          
     }
     function loginUser(){
+        $this->load->model('user_model','user');
         $this->load->helper('url'); 
         $config = array(
         array('field' => 'email',
@@ -216,6 +220,7 @@ $this->form_validation->set_rules($config);
 
     }
     function manageUser(){
+        $this->load->model('user_model','user');
         if(($this->session->username)&&($this->session->logged_in)){
              $this->load->view('template/header');
              $this->load->view('users/index');
