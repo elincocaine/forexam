@@ -53,5 +53,5 @@
 
 </div>
 
-<script src="<?php echo base_url();?>/assets/js/pagination.js"></script>
-<script src="<?php echo base_url();?>/assets/js/userOrder.js"></script>
+<script src="../assets/js/pagination.js"></script>
+<script src="../assets/js/userOrder.js"></script>

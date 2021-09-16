@@ -61,5 +61,5 @@
 
 </div>
 
-<script src="<?php echo base_url();?>/assets/js/pagination.js"></script>
-<script src="<?php echo base_url();?>/assets/js/inventoryAdmin.js"></script>
+<script src="../assets/js/pagination.js"></script>
+<script src="../assets/js/inventoryAdmin.js"></script>

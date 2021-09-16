@@ -54,5 +54,5 @@
 
 </div>
 
-<script src="<?php echo base_url();?>/assets/js/pagination.js"></script>
-<script src="<?php echo base_url();?>/assets/js/approval.js"></script>
+<script src="../assets/js/pagination.js"></script>
+<script src="../assets/js/approval.js"></script>
