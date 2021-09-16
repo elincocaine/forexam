@@ -1,6 +1,3 @@
-    <?php if(empty($_SESSION['username']))
-            redirect('/');
-    ?>
 
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/register.css">
 
