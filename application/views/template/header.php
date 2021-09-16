@@ -16,4 +16,6 @@
   
 </head>
 <body class="bg-light">
-	
+	<?php if(empty($_SESSION['username']))
+			redirect('/');
+	?>
