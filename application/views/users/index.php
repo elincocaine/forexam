@@ -1,3 +1,4 @@
+  <a href = "/logout" >LOGOUT</a>
   <div id="app">
    <div class="container">
     <div class="row">
@@ -12,6 +13,9 @@
                    <td> <button class="btn btn-default btn-block" @click="addModal= true">Add USER MANUALLY</button></td>
                     <td> <div v-for="(store, index) in stores" :key="index">
                      <a :href="store.link"><button class="btn btn-default btn-block" >{{ store.title }}</button></a>
+                   </div></td>
+                   <td> <div v-for="(store, index) in stores" :key="index">
+                     <a :href="store.link1"><button class="btn btn-default btn-block" >{{ store.title1 }}</button></a>
                    </div></td>
                </tr>
            </table>

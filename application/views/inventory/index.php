@@ -1,3 +1,4 @@
+  <a href = "/logout" >LOGOUT</a>
   <div id="inventory">
    <div class="container">
     <div class="row">

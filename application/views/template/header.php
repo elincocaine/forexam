@@ -16,4 +16,4 @@
   
 </head>
 <body class="bg-light">
-	<a href = "/logout" >LOGOUT</a>
+	
