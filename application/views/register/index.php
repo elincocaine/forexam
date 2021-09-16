@@ -1,4 +1,3 @@
-
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/register.css">
 
 <div id="register" class="container-contact100">

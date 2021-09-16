@@ -1,5 +1,5 @@
   <?php if(empty($_SESSION['username']))
-  redirect('/');
+    redirect('/');
   ?>
   <a href = "/logout" >LOGOUT</a>
   <div id="userOrder">
