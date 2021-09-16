@@ -97,7 +97,7 @@ class Order extends CI_Controller{
      			'item_id' => $item_id,
      			"nqty"=> $test);
      			echo $this->inventory->updateInventory($data);
-			exit();
+			//exit();
        		}
 
 

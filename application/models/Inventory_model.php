@@ -54,12 +54,12 @@ class Inventory_model extends CI_Model{
          $field = array("status" => 1);
           var_dump($orderid);
             $this->db->where('request_id', $data['req_id']);
-            $this->db->update('order_request', $field);
+           $query1 =  $this->db->update('order_request', $field);
 
 
         $field2 = array("quantity" => $data['nqty']);
           $this->db->where('id', $data['item_id']);
-         $this->db->update('inventory', $field);
+       $query2 = $this->db->update('inventory', $field2);
 
    
     }
