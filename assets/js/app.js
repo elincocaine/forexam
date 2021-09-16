@@ -42,7 +42,7 @@ var v = new Vue({
             usertype:''},
       stores: [
               { link: '/inventory', 
-                title: 'Go to Inventory' 
+                title: 'Go to Inventory', 
                 link1: '/approval', 
                 title1: 'Go to Approval' 
               }
