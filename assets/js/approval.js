@@ -39,8 +39,8 @@ var v = new Vue({
       stores: [
               { link: '/inventory', 
                 title: 'Go to Inventory', 
-                link1: '/approval', 
-                title1: 'Go to Approval'  
+                link1: '/manage', 
+                title1: 'Go to Users'  
               }
               ],
         chooseItem:{},
