@@ -37,8 +37,10 @@ var v = new Vue({
             quantity:''
           },
       stores: [
-              { link: '/approval', 
-                title: 'Go to Approval' 
+              { link: '/inventory', 
+                title: 'Go to Inventory', 
+                link1: '/approval', 
+                title1: 'Go to Approval'  
               }
               ],
         chooseItem:{},

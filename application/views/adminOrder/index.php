@@ -9,6 +9,14 @@
             </transition>
         <div class="col-md-12">
            <table class="table bg-dark my-3">
+            <tr>
+                  <td> <div v-for="(store, index) in stores" :key="index">
+                     <a :href="store.link"><button class="btn btn-default btn-block" >{{ store.title }}</button></a>
+                   </div></td>
+                   <td> <div v-for="(store, index) in stores" :key="index">
+                     <a :href="store.link1"><button class="btn btn-default btn-block" >{{ store.title1 }}</button></a>
+                   </div></td>
+            </tr>
              
            </table>
             <table class="table is-bordered is-hoverable">
