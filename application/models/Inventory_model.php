@@ -5,7 +5,7 @@ class Inventory_model extends CI_Model{
 		  return $this->db->insert('inventory', $data);
 	}
 	public function fetchAll(){
-            $this->db->where('status',1);
+            $this->db->where('status','1');
 	$query = $this->db->get('inventory');
              //;
         if($query->num_rows() > 0){
