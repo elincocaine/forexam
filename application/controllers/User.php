@@ -210,7 +210,7 @@ $this->form_validation->set_rules($config);
                 }else if($login['type'] == 2){
                     $result['redirect'] = base_url()."UserOrder";
                 }else{
-                    $result['redirect'] = base_url()."user/index";
+                    $result['redirect'] = base_url()."user/";
 
                 }
             }else{
