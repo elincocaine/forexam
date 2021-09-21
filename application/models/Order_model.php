@@ -6,7 +6,7 @@ class Order_model extends CI_Model{
 	}
 
 	public function fetchAllPending(){
-            $this->db->where('status',2);
+            $this->db->where('i.status',2);
             $this->db->join('inventory i', 'i.id = or.itemid');
 	$query = $this->db->get('order_request or');
 
