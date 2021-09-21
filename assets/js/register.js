@@ -71,7 +71,7 @@ var v = new Vue({
                          v.successMSG = data.message;
                          window.location = data.redirect;
                     }else{
-                        v.formValidate = data.message;
+                        v.successMSG = data.message;
                     }
         
                 
