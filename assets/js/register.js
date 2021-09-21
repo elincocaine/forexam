@@ -72,7 +72,7 @@ var v = new Vue({
                 }else{
                     v.successMSG = response.data.message;
                      console.log(response.data)
-                     window.location = response.data.redirect;
+                     //window.location = response.data.redirect;
                 }
                })
         },
