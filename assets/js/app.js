@@ -86,8 +86,6 @@ var v = new Vue({
                   var data = response.data
                     if(data.status == "SUCCESS"){
                          v.successMSG = data.message;
-                          v.clearAll();
-                          v.clearMSG();
                     }else{
                         v.successMSG = data.message;
                          v.clearAll();
@@ -97,14 +95,14 @@ var v = new Vue({
         },
         updateUser(){
             var formData = v.formData(v.chooseUser); axios.post(this.url+"user/updateUser", formData).then(function(response){
-                if(response.data.error){
-                    v.formValidate = response.data.message;
-                }else{
-                      v.successMSG = response.data.message;
-                    v.clearAll();
-                    v.clearMSG();
-                
-                }
+                    var data = response.data
+                    if(data.status == "SUCCESS"){
+                         v.successMSG = data.message;
+                    }else{
+                        v.successMSG = data.message;
+                         v.clearAll();
+                        v.clearMSG();
+                    }
             })
         },
         deleteUser(){
