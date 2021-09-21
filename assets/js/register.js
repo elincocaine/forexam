@@ -55,12 +55,16 @@ var v = new Vue({
           addUser(){   
             var formData = v.formData(v.newUser);
               axios.post(this.url+"user/addUser", formData).then(function(response){
-                if(response.data.error){
-                    v.formValidate = response.data.message;
-                }else{
-                    v.successMSG = response.data.message;
-                     v.clearnewUser();
-                }
+               var data = response.data
+                    if(data.status == "SUCCESS"){
+                      v.successMSG = response.data.message;
+                      v.clearnewUser();
+
+                    }else{
+                        v.formValidate = response.data.message;
+                    }
+
+
                })
         },
           loginUser(){   
