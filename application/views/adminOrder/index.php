@@ -28,7 +28,8 @@
                 
                 <th class="text-white">user_id</th>
                 <th class="text-white">request_id</th>
-                <th class="text-white">item_id</th>
+                <th class="text-white">item name</th>
+                <th class="text-white">item description</th>
                 <th class="text-white">quantity</th>
                 <th class="text-white">status</th>
              
@@ -39,7 +40,8 @@
                     <tr v-for="user in users" class="table-default">
                         <td>{{user.user_id}}</td>
                         <td>{{user.request_id}}</td>
-                        <td>{{user.item_id}}</td>
+                        <td>{{user.item_name}}</td>
+                         <td>{{user.item_description}}</td>
                         <td>{{user.quantity}}</td>
                         <td>{{user.status}}</td> 
                         <td><button class="btn btn-danger fa fa-trash" @click="deleteModal = true; selectUser(user)"></button></td>
