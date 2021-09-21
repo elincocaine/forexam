@@ -66,13 +66,15 @@ var v = new Vue({
           loginUser(){   
             var formData = v.formData(v.loginUser);
               axios.post(this.url+"user/loginUser", formData).then(function(response){
-                if(response.data.error){
-                    v.formValidate = response.data.message;
-
-                }else{
-                    v.successMSG = response.data.message;
-                     console.log(response.data)
-                     //window.location = response.data.redirect;
+              
+                 var data = response.data
+                    if(data.status == "SUCCESS"){
+                         v.successMSG = response.data.message;
+                         window.location = response.data.redirect;
+                    }else{
+                        v.formValidate = response.data.message;
+                    }
+        
                 }
                })
         },
