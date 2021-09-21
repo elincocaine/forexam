@@ -5,8 +5,7 @@
 		<transition
                 enter-active-class="animated fadeInLeft"
                      leave-active-class="animated fadeOutRight">
-                     <div class="notification is-success text-center px-5 top-middle" v-if="successMSG" @click="successMSG = false">{{successMSG}}</div>
-                      <div class="notification is-failed text-center px-5 top-middle" v-if="successMSG" @click="successMSG = false">{{successMSG}}</div>
+                     <div class="notification is-info text-center px-5 top-middle" v-if="successMSG" @click="successMSG = false">{{successMSG}}</div>
             </transition>
   <div class="row">
     <div class="col">
