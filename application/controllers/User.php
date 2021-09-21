@@ -210,8 +210,9 @@ $this->form_validation->set_rules($config);
                 }else if($login['type'] == 2){
                     $result['redirect'] = base_url()."UserOrder";
                 }else{
+                    $result['status'] = "FAILED";
+                    $result['message'] = "FAILED LOGIN";
                     $result['redirect'] = base_url()."user/";
-
                 }
             }else{
                  $result['status'] = "FAILED";
