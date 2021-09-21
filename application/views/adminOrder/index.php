@@ -44,7 +44,7 @@
                          <td>{{user.item_description}}</td>
                         <td>{{user.quantity}}</td>
                         <td>{{user.status}}</td> 
-                        <td><button class="btn btn-danger fa fa-trash" @click="deleteModal = true; selectUser(user)"></button></td>
+                        <td><button class="btn btn-danger fa fa-check-square-o" @click="deleteModal = true; selectUser(user)"></button></td>
                     </tr>
                     <tr v-if="emptyResult">
                       <td colspan="9" rowspan="4" class="text-center h1">No Record Found</td>
