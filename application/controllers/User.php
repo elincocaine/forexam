@@ -207,9 +207,12 @@ $this->form_validation->set_rules($config);
                 $result['message'] = "SUCCESSFULLY LOGIN";
                 if($login['type'] == 1){
                     $result['redirect'] = base_url()."manage";
-                }else{
+                }else if($login['type'] == 2){
                     $result['redirect'] = base_url()."UserOrder";
-            }
+                }else{
+                    $result['redirect'] = base_url()."user/index";
+
+                }
             }else{
                  $result['status'] = "FAILED";
                 $result['message'] = "FAILED";
