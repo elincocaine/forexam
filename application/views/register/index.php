@@ -21,7 +21,7 @@
         <button class="btn btn-outline-dark fa fa-user" :class="{'active':(newUser.usertype == '1')}" @click.prevent="pickUsertype('1')"> ADMIN</button>
   <button class="btn btn-outline-dark fa fa-users" :class="{'active': (newUser.usertype == '2')}" @click.prevent="pickUsertype('2')"> USER</button>
     </div>
-   <div  class="has-text-danger"v-html="formValidate.usertype"></div>
+   <div class="has-text-danger" v-html="formValidate.usertype"></div>
     </div>
         	
             <div class="form-group">
