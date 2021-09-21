@@ -74,7 +74,7 @@ var v = new Vue({
                         v.formValidate = data.message;
                     }
         
-                }
+                
                })
         },
          pickUsertype(usertype){
