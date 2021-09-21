@@ -29,9 +29,6 @@ class Order extends CI_Controller{
 
    function fetchAllPending(){
     $order_list = $this->order->fetchAllPending();
-
-    var_dump($order_list);
-    exit();
     	 if($order_list){
                    $result['inventory']  =  $order_list;
              }
